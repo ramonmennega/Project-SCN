@@ -8,6 +8,7 @@ import {
     Link
 } from "react-router-dom";
 
+import Start from './components/Start';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -17,14 +18,21 @@ class App extends Component {
     render() {
         return (
             <Router>
+                {/*Header start*/}
                 <header>
-                    <li><Link to='/'> Home </Link></li>
+                    <img alt={'xtern-it'}/>
+                    <li><Link to='/'>Start</Link></li>
+                    <li><Link to='/home'>Home</Link></li>
                     <li><Link to='/about'>About us</Link></li>
                     <li><Link to='/projects'>Projects</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                 </header>
+                {/*Header end*/}
                 <Switch>
                     <Route exact path='/'>
+                        <Start />
+                    </Route>
+                    <Route exact path='/home'>
                         <Home />
                     </Route>
                     <Route exact path='/about'>
