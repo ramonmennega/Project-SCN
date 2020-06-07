@@ -1,0 +1,54 @@
+.banner {
+    position: relative;
+    background: var(--secondary-background);
+    color: var(--white);
+    padding: 40px 0;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(177deg, transparent 49.9%, white 50%);
+}
+
+.content-banner {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.banner h1 {
+    color: var(--white);
+}
+
+.card-banner {
+    z-index: 2;
+    /*position: relative;*/
+    width: 45%;
+    background: var(--primary-background);
+    padding: 40px;
+    box-shadow: var(--primary-shadow);
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    /*max-height: 500px;*/
+    border: unset;
+}
+
+@media only screen and (max-width: 1400px) {
+    /*.banner {*/
+    /*    height: 80vh;*/
+    /*}*/
+
+    /*.card-banner {*/
+    /*    display: none;*/
+    /*}*/
+}
+
+
+

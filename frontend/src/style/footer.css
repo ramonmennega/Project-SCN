@@ -1,0 +1,21 @@
+.footer {
+    position: relative;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    background: var(--footer-background);
+    display: block;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    color: var(--white);
+    background: var(--secondary-background)
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: unset;
+    color: var(--primary-color);
+}
