@@ -1,0 +1,152 @@
+:root {
+    /* basic colors */
+    --red: #e94652;
+    --grey: #d6d6d6;
+    --white: #ffffff;
+
+    --primary-color: #1f1f1f;
+
+    --primary-color-opacity: #1f1f1faa;
+
+    --primary-color-header: var(--primary-color);
+    --primary-color-text: #1f1f1f90;
+
+    --primary-background: var(--white);
+    --secondary-background: var(--red);
+
+    --primary-shadow: 0 0 20px -10px var(--primary-color);
+
+    --footer-background: #ebebeb;
+
+    --success-color: #98e867;
+    --failed-color: #ff0000;
+
+    --link-color: #006edc;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: var(--primary-background);
+    font-family: "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    color: var(--primary-color-header);
+}
+
+p {
+    color: var(--primary-color-text);
+}
+
+a.link {
+    color: var(--link-color);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    height: inherit;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex {
+    display: flex;
+}
+
+.centered-top {
+    /* margin-top: 40px; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: -webkit-fill-available;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.button-primary {
+    display: flex;
+    text-decoration: unset;
+    background: var(--primary-background);
+    box-shadow: var(--primary-shadow);
+    width: 25%;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: var(--primary-color);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    box-shadow: 0 0 20px 0;
+}
+
+input {
+    outline: unset;
+}
+
+input:hover {
+    box-shadow: 0 0 20px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+    .button-primary {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    p {
+        font-size: 80%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .columns {
+        display: block;
+    }
+
+    .column {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .button-primary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+.login-form {
+    position: relative;
+    box-sizing: border-box;
+    border: unset;
+    background: var(--primary-background);
+    border-left: 5vw solid var(--secondary-background);
+    box-shadow: var(--primary-shadow);
+    width: 100%;
+    height: inherit;
+    padding: 40px;
+    margin: 60px 0 100px 0;
+}
+
+span.tag-input {
+    margin-left: 20px;
+}
+
+.login-form input {
+    box-sizing: border-box;
+    display: block;
+    min-width: 60%;
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+    height: 40px;
+    border-radius: 50px;
+    border: unset;
+    box-shadow: var(--primary-shadow);
+    color: var(--primary-color-text);
+    transition: 300ms;
+}
+
+.login-form input:hover {
+    box-shadow: 0 0 20px 0;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    margin-top: 5px;
+}
+
+.login-form input[type="button"] {
+    padding: 0;
+    background: var(--success-color);
+    color: var(--white);
+}
+
+.login-form a.link {
+    margin-right: 15px;
+}
